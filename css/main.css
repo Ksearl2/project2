@@ -1,1 +1,24 @@
 /* Place CSS styles here */
+.project-header{
+    display: inline-block;
+    background-color: rgb(140, 201, 255);
+    padding: 5px 15px;
+    border-radius: 100px;
+    border: 1px rgb(53, 104, 149);
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.navigation{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    display: flex;
+    gap: 30px;
+}
+
+.section:hover{
+    background-color: rgb(88, 144, 194);
+    border-radius: 100px;
+    box-shadow: 0 0 0 1px rgb(88, 144, 194)
+    
+}
