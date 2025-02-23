@@ -22,3 +22,7 @@
     box-shadow: 0 0 0 1px rgb(88, 144, 194)
     
 }
+
+.wave-hero-image{
+    background-image: url(..img/wave.jpg);
+}
