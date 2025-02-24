@@ -24,5 +24,6 @@
 }
 
 .wave-hero-image{
-    background-image: url(..img/wave.jpg);
+    height: 200px;
+    width: auto;
 }
