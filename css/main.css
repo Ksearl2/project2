@@ -1,4 +1,8 @@
 /* Place CSS styles here */
+body{
+    background-color: #5A5F90;
+}
+
 .project-header{
     display: inline-block;
     background-color: rgb(140, 201, 255);
@@ -10,7 +14,7 @@
 }
 
 .navigation{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Helvetica, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
     display: flex;
     gap: 30px;
@@ -26,4 +30,14 @@
 .wave-hero-image{
     height: 200px;
     width: auto;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Badeen Display", Helvetica, Arial, sans-serif;
+    color: rgb(140, 201, 255);
+    font-size: 150px;
 }
