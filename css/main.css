@@ -28,7 +28,6 @@ body{
 }
 
 .wave-hero-image{
-    height: 200px;
     width: auto;
 }
 
@@ -40,4 +39,22 @@ body{
     font-family: "Badeen Display", Helvetica, Arial, sans-serif;
     color: rgb(140, 201, 255);
     font-size: 150px;
+}
+
+.test{
+    font-family: "Badeen Display", Helvetica, Arial, sans-serif;
+    color: rgb(140, 201, 255);
+    font-size: 110px;
+    text-align: center;
+}
+
+.new-release{
+    list-style-position: inside;
+    list-style: none;
+    padding-left: 0
+}
+
+.doechii{
+    margin-left: 60px;
+    border: 5px solid rgb(140, 201, 255)
 }
