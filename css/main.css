@@ -50,6 +50,7 @@ body{
     color: rgb(140, 201, 255);
     font-size: 90px;
     text-align: center;
+    background-image: linear-gradient(#5A5F90, #000000, #5A5F90)
 } 
 
 .new-release{
@@ -88,4 +89,31 @@ body{
     flex: 1 1 300px;
     text-align: center;
 }
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+   }
+  input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  .error {
+    color: red;
+  }
 

@@ -35,7 +35,6 @@
       <a class="section" href="blank">Home</a>
       <a class="section" href="blank">New Releases</a>
       <a class="section" href="blank">Top 6</a>
-      <a class="section" href="blank">Music Videos</a>
       <a class="section" href="blank">Sign Up</a>
     </nav>
   </header>
@@ -74,7 +73,7 @@
 </ul>
 
 <div class="chapter">
- <p>Top 6 Songs of All Time</p>
+ <p>My Current Top 6 Songs</p>
 </div>
 
 <ul class="top-songs">
@@ -121,6 +120,29 @@
   </li>
 </ul>
 
+<div class="chapter">
+  <p>Sign up</p>
+ </div>
+
+ <form action="./thank-you.html" id="registrationForm">
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="firstName" required autocomplete="given-name" autofocus>
+  <span id="firstNameError" class="error"></span><br><br>
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" name="lastName" required autocomplete="family-name">
+  <span id="lastNameError" class="error"></span><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required autocomplete="email">
+  <span id="emailError" class="error"></span><br><br>
+
+  <input type="checkbox" id="terms" name="terms" required>
+  <label for="terms">I agree to the terms and conditions.</label>
+    <span id="termsError" class="error"></span><br><br>
+
+  <button type="submit">Register</button>
+</form>
 
 
 </body>
