@@ -31,21 +31,19 @@ body{
     
 }
 
-.wave-hero-image{
-    width: 100%;
-}
 
 .title{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
     font-family: "Badeen Display", Helvetica, Arial, sans-serif;
     color: rgb(140, 201, 255);
     font-size: 150px;
+    background-image: url(../img/wave.jpg);
+    padding-bottom: 200px;
+    padding-top: 150px;
 }
 
-.h1{
+
+h1, h2, h3, h4{
     font-family: "Badeen Display", Helvetica, Arial, sans-serif;
     font-weight: 100;
     color: rgb(140, 201, 255);
@@ -53,6 +51,14 @@ body{
     text-align: center;
     
 } 
+
+p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    color: rgb(140, 201, 255);
+    font-size: 40px;
+    text-align: center;
+}
 
 .new-release{
     list-style-position: inside;
@@ -63,7 +69,7 @@ body{
 .new{
     margin-left: px;
     border: 5px solid rgb(140, 201, 255);
-    width: 35%
+    width: 30%
 }
 
 .order{
@@ -119,6 +125,4 @@ form {
     color: red;
 }
 
-.h1{
 
-}
