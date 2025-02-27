@@ -13,9 +13,13 @@ body{
     margin-left: 40px;
 }
 
+.hero{
+    width: 100%
+}
+
 .navigation{
     font-family:Helvetica, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     display: flex;
     gap: 30px;
 }
@@ -23,7 +27,7 @@ body{
 .section:hover{
     background-color: rgb(88, 144, 194);
     border-radius: 100px;
-    box-shadow: 0 0 0 1px rgb(88, 144, 194)
+    
     
 }
 
@@ -55,12 +59,14 @@ body{
 }
 
 .new{
-    margin-left: 60px;
+    margin-left: px;
     border: 5px solid rgb(140, 201, 255);
     width: 35%
 }
 
 .order{
     display: flex;
-    justify-content: space-around;
+    justify-content:flex-start;
 }
+
+
