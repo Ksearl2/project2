@@ -45,8 +45,9 @@ body{
     font-size: 150px;
 }
 
-.chapter{
+.h1{
     font-family: "Badeen Display", Helvetica, Arial, sans-serif;
+    font-weight: 100;
     color: rgb(140, 201, 255);
     font-size: 90px;
     text-align: center;
@@ -116,5 +117,8 @@ form {
   }
   .error {
     color: red;
-  }
+}
 
+.h1{
+
+}
