@@ -37,9 +37,12 @@ body{
     font-family: "Badeen Display", Helvetica, Arial, sans-serif;
     color: rgb(140, 201, 255);
     font-size: 150px;
-    background-image: url(../img/wave.jpg);
     padding-bottom: 200px;
     padding-top: 150px;
+}
+
+.wave-hero-image{
+    background-image: url(../img/wave.jpg);
 }
 
 
@@ -104,7 +107,8 @@ p{
     }
 
     .new{
-        width: 60%
+        width: 60%;
+        margin-left: 5%;
     }
 
     .cover{
@@ -123,8 +127,8 @@ p{
         padding-left: 20%;
     }
 
-    .form{
-        margin-left: 10%;
+    form{
+        align-items: center;
     }
 }
 
