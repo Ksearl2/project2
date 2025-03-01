@@ -3,12 +3,12 @@ body{
     background-color: #5A5F90;
 }
 
+footer {
+    margin: 0;
+}
 .project-header{
     display: inline-block;
-    background-color: rgb(140, 201, 255);
     padding: 5px 15px;
-    border-radius: 100px;
-    border: 1px rgb(53, 104, 149);
     margin-top: 20px;
     margin-left: 40px;
 }
@@ -17,19 +17,25 @@ body{
     width: 100%
 }
 
-.navigation{
-    font-family:Helvetica, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 22px;
-    display: flex;
-    gap: 30px;
-}
+.offcanvas-nav {
+    position: relative; /* To position the menu within */
+  }
 
-.section:hover{
-    background-color: rgb(88, 144, 194);
-    border-radius: 100px;
-    
-    
-}
+.menu {
+    position: fixed; /* Fixed position for overlay effect */
+    top: 0px;
+    right: 0;
+    height: 100%;
+    width: 250px; /* Adjust width as needed */
+    background-color: rgb(140, 201, 255);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transform: translateX(100%); /* Initially slide out to the left */
+    transition: transform 0.3s ease; /* Smooth transition */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+  }
 
 
 .title{
@@ -43,6 +49,25 @@ body{
 
 .wave-hero-image{
     background-image: url(../img/wave.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroller{
+    border-radius: 100px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -200px;
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 }
 
@@ -67,7 +92,8 @@ p{
 .new-release{
     list-style-position: inside;
     list-style: none;
-    padding-left: 0
+    padding-left: 0;
+    gap: 100px
 }
 
 .new{
@@ -114,6 +140,8 @@ form {
   label {
     display: block;
     margin-bottom: 5px;
+    color: rgb(140, 201, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    }
   input, select, textarea {
     width: 100%;
@@ -123,10 +151,12 @@ form {
   }
   button {
     background-color: rgb(140, 201, 255);
-    color: white;
+    color: blue;
     padding: 10px 15px;
     border: none;
     cursor: pointer;
+    border-radius: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   .error {
     color: red;
@@ -142,7 +172,7 @@ form {
 .cover{
     transition: 0.5s;
     border: 5px solid rgb(140, 201, 255);
-    width: 60%;
+    width: 40%;
 }
 
 .cover:hover{
@@ -150,27 +180,32 @@ form {
     transform: scale(1.1);
 }
 
-
-.mobile-menu {
-    display: block; /* Hide the menu by default */
-   }
-   .menu.expanded {
-     display: block;
-   }
-   .hamburger {
-     display: none; /* Hide the hamburger button by default */
+footer{
+    background-color:rgb(140, 201, 255);
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
-    .mobile-menu {
-        display: none; /* Hide the menu by default */
-       }
-       .menu.expanded {
-         display: block;
-       }
-       .hamburger {
-         display: none; /* Hide the hamburger button by default */
-    }
+
+    .offcanvas-nav {
+        display: block; /* Show the full navigation on larger screens */
+      }
+    .menu {
+        display: block; /* Ensure menu is visible on larger screens */
+        position: static; /* Remove fixed positioning */
+        width: auto;
+        transform: none; /* No need for transitions */
+        box-shadow: none;
+        display: flex;
+        gap: 20px;
+        border-radius: 100px
+      }
+    .menu-toggle {
+        display: none; /* Hide the toggle button on larger screens */
+      }
+
 }
 
 @media (max-width: 768px) {
@@ -190,6 +225,7 @@ form {
 
     p{
         font-size: 125%;
+        text-align: center;
     }
 
     .new{
@@ -198,7 +234,7 @@ form {
     }
 
     .cover{
-      width: 400px
+      width: 300px
     }
 
     .chapter{
@@ -209,13 +245,10 @@ form {
         padding-left: 6%
     }
 
-    .videos{
-        padding-left: 20%;
-    }
-
     form{
         align-items: center;
     }
+
 
     .wave-hero-image{
         background-image: url(../img/wave.jpg);
@@ -226,20 +259,25 @@ form {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        max-width: 100%;
+        padding: 0%
     
     }
 
-    .navigation{
-        display: none;
-    }
- 
     .menu {
-        display: none; /* Show the menu on smaller screens */
-      }
-      .hamburger {
-        display: block; /* Show the hamburger button on smaller screens */
-      }
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
 
-      
-    
+
+    .menu.expanded {
+    transform: translateX(0);
+    background-color: rgb(140, 201, 255);
+    }
+
+    .menu-toggle {
+        border-radius: 100px
+    }
+
 }

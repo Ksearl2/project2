@@ -32,21 +32,8 @@
   
   <header class="project-header">
   
-    <nav class="mobile-menu">
-      <button class="hamburger" aria-expanded="false" aria-controls="main-menu">
-        <span class="hamburger-icon"></span> Menu
-      </button>
-      <ul id="main-menu" class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">New Releases</a></li>
-        <li><a href="#">Top 6</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Sign up</a></li>
-      </ul>
-    </nav>
-
-
-    <nav class="navigation">
+    <button class="menu-toggle" aria-expanded="false" aria-controls="offcanvas-menu">Menu</button>
+    <nav id="offcanvas-menu" class="menu">
       <a class="section" href="blank">Home</a>
       <a class="section" href="blank">New Releases</a>
       <a class="section" href="blank">Top 6</a>
@@ -58,7 +45,7 @@
 <div class="wave-hero-image">
 
   <div class="title">The Wave</div>
-
+  <button class="scroller" onclick="location.href='#sign-up'">Sign Up</button>
 </div>
 
 <div class="chapter">
@@ -74,8 +61,8 @@
   </li>
   <li>
     <div class="order">
-      <img src="./img/saya.jpg" class="new" alt="Song by Saya Gray">
-      <p>THUS IS WHY (I DON’T SPRING 4 LOVE) by Saya Gray</p>
+      <img src="./img/girl.jpg" class="new" alt="Song by Girl in Red">
+      <p>Confefssion by Girl in Red</p>
     </div>
   </li>
   <li>
@@ -157,8 +144,8 @@
   </li>
 </ul>
 
-<div class="chapter">
-  <h4>Sign up to Newsletter</h4>
+<div id="sign-up" class="chapter">
+  <h4>Sign Up</h4>
  </div>
 
  <form action="#" id="registrationForm">
@@ -181,7 +168,12 @@
   <button type="submit">Register</button>
 </form>
 
+<script src="./js/main.js"></script>
 
+<footer>
+  <span>&copy; Record Inc</span>
+  
+</footer>
 
 </body>
 
