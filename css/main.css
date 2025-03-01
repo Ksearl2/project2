@@ -69,6 +69,8 @@ p{
 .new{
     margin-left: px;
     border: 5px solid rgb(140, 201, 255);
+    max-width: 100%;
+    height: auto;
     width: 30%
 }
 
@@ -78,9 +80,23 @@ p{
 }
 
 .best{
-    margin-left: px;
     border: 5px solid rgb(140, 201, 255);
     width: 50%;
+}
+
+@media (max-width: 768px) {
+    .best{
+        margin-left: 30px;
+    } 
+
+    h1, h2, h3, h4{
+        text-align: center;
+    }
+
+    .hero{
+        max-width: auto;
+        max-height: auto;
+    }
 }
 
 .top-songs{
@@ -125,4 +141,19 @@ form {
     color: red;
 }
 
+.videos{
+    text-align: center;
+    list-style-position: inside;
+    padding-bottom: 20px;
+    list-style: none;
+}
 
+.cover{
+    transition: 0.5s;
+    border: 5px solid rgb(140, 201, 255)
+}
+
+.cover:hover{
+    border: 5px solid rgb(9, 140, 255);
+    transform: scale(1.1);
+}
