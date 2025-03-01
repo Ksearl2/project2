@@ -88,62 +88,6 @@ p{
     width: 50%;
 }
 
-@media (max-width: 768px) {
-    .best{
-        margin-left: 30px;
-    } 
-
-    h1, h2, h3, h4{
-        text-align: center;
-        font-size: 70px;
-    }
-
-    .hero{
-        max-width: auto;
-        max-height: auto;
-    }
-
-    p{
-        font-size: 125%;
-    }
-
-    .new{
-        width: 60%;
-        margin-left: 5%;
-    }
-
-    .cover{
-      width: 400px
-    }
-
-    .chapter{
-        padding-left: 20%;
-    }
-
-    .title{
-        padding-left: 6%
-    }
-
-    .videos{
-        padding-left: 20%;
-    }
-
-    form{
-        align-items: center;
-    }
-
-    .wave-hero-image{
-        background-image: url(../img/wave.jpg);
-        top: 0;
-        left: 0;
-        width: 100vw;  /* Full viewport width */
-        height: 100vh; /* Full viewport height */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    
-    }
-}
 
 
 .top-songs{
@@ -204,4 +148,98 @@ form {
 .cover:hover{
     border: 5px solid rgb(9, 140, 255);
     transform: scale(1.1);
+}
+
+
+.mobile-menu {
+    display: block; /* Hide the menu by default */
+   }
+   .menu.expanded {
+     display: block;
+   }
+   .hamburger {
+     display: none; /* Hide the hamburger button by default */
+}
+
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: none; /* Hide the menu by default */
+       }
+       .menu.expanded {
+         display: block;
+       }
+       .hamburger {
+         display: none; /* Hide the hamburger button by default */
+    }
+}
+
+@media (max-width: 768px) {
+    .best{
+        margin-left: 30px;
+    } 
+
+    h1, h2, h3, h4{
+        text-align: center;
+        font-size: 70px;
+    }
+
+    .hero{
+        max-width: auto;
+        max-height: auto;
+    }
+
+    p{
+        font-size: 125%;
+    }
+
+    .new{
+        width: 60%;
+        margin-left: 5%;
+    }
+
+    .cover{
+      width: 400px
+    }
+
+    .chapter{
+        padding-left: 20%;
+    }
+
+    .title{
+        padding-left: 6%
+    }
+
+    .videos{
+        padding-left: 20%;
+    }
+
+    form{
+        align-items: center;
+    }
+
+    .wave-hero-image{
+        background-image: url(../img/wave.jpg);
+        top: 0;
+        left: 0;
+        width: 100vw;  /* Full viewport width */
+        height: 100vh; /* Full viewport height */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+    }
+
+    .navigation{
+        display: none;
+    }
+ 
+    .menu {
+        display: none; /* Show the menu on smaller screens */
+      }
+      .hamburger {
+        display: block; /* Show the hamburger button on smaller screens */
+      }
+
+      
+    
 }
