@@ -150,7 +150,8 @@ form {
 
 .cover{
     transition: 0.5s;
-    border: 5px solid rgb(140, 201, 255)
+    border: 5px solid rgb(140, 201, 255);
+    max-width: 40%;
 }
 
 .cover:hover{
