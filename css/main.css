@@ -43,6 +43,7 @@ body{
 
 .wave-hero-image{
     background-image: url(../img/wave.jpg);
+
 }
 
 
@@ -120,7 +121,7 @@ p{
     }
 
     .title{
-        padding-left: 20%
+        padding-left: 6%
     }
 
     .videos{
@@ -129,6 +130,18 @@ p{
 
     form{
         align-items: center;
+    }
+
+    .wave-hero-image{
+        background-image: url(../img/wave.jpg);
+        top: 0;
+        left: 0;
+        width: 100vw;  /* Full viewport width */
+        height: 100vh; /* Full viewport height */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    
     }
 }
 
